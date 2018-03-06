@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0 EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<!-- puxa o global.properties para funcionar com as mensagens passadas de acordo com
+	as tags criadas																		-->
+	<constant name="struts.custom.i18n.resources" value="global" />
+	
+	
+
+	<package name="com.br.struts.action" extends="struts-default">
+		<!-- encaminha para página index com o nome de home -->
+		<action name="home" class="com.br.struts.action.IndexAction">
+			<result name="success">index.jsp</result>
+		</action>
+		<!-- encaminha para página B com o nome de A -->
+		<action name="a" class="com.br.struts.action.ATagAction">
+			<result name="success">b.jsp</result>
+		</action>
+		<!-- encaminha para página a com o nome de b -->
+		<action name="b" class="com.br.struts.action.BTagAction">
+			<result name="success">a.jsp</result>
+		</action>
+
+		<!-- encaminha para página de erro /tutorial -->
+		<action name="error" class="com.br.struts.action.ActionErro">
+			<result name="tutorial">/tutorial/teste.action</result>
+		</action>
+		<!-- encaminha para página welcome e inputa os dados do registration com o nome de register -->
+		<action name="register" class="com.br.struts.action.RegistrationAction">
+			<result name="success">welcome.jsp</result>
+			<result name="input">registration.jsp</result>
+		</action>
+		<!-- encaminha para página login com o nome de registration -->
+		<action name="registration" class="com.br.struts.action.LoginAction">
+			<result name="success">registration.jsp</result>
+		</action>
+		<!-- encaminha para página set com o nome de set -->
+		<action name="set" class="com.br.struts.action.SetTagAction">
+			<result name="success">set.jsp</result>
+		</action>
+		<!-- encaminha para página Select com o nome de selectAction -->
+		<action name="selectAction" class="com.br.struts.action.SelectAction" method="display">
+			<result name="none">select.jsp</result>
+		</action>
+		<!--  encaminha para pagina de resultado da selectAction -->
+		<action name="selectResult" class="com.br.struts.action.SelectAction">
+			<result name="success">resultSelect.jsp</result>
+		</action>
+		<!-- chamar action de text area -->
+		<action name="textArea" class="com.br.struts.action.TextAreaAction">
+			<result name="success">textArea.jsp</result>
+		</action>
+		<!-- chamar resultado da action text área -->
+		<action name="inputTextArea" class="com.br.struts.action.TextAreaAction">
+			<result name="success">result.jsp</result>
+		</action>
+		
+		<action name="checkBox" class="com.br.struts.action.CheckBoxAction" method="display">
+			<result name="none">checkbox.jsp</result>
+		</action>
+		
+		<action name="inputCheckBox" class="com.br.struts.action.CheckBoxAction" >
+			<result name="success">resultCheckBox.jsp</result>
+		</action>
+		
+		<action name="radioButton" class="com.br.struts.action.RadioButtonAction" method="display">
+			<result name="none">radioButton.jsp</result>
+		</action>
+		
+		<action name="inputRadioButton" class="com.br.struts.action.RadioButtonAction">
+			<result name="success">resultRadioButton.jsp</result>
+		</action>
+		
+		
+	</package>
+</struts>
