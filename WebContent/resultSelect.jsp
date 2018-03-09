@@ -15,9 +15,9 @@
 <br>
 <hr>
 <br>
-<h2><s:property value="youSearch"/></h2>
+<h2><s:property value="yourSearchEngine"/></h2>
 <br/>
-<h2><s:property value="youMonth"/></h2>
+<h2><s:property value="yourMonth"/></h2>
 
 </body>
 </html>

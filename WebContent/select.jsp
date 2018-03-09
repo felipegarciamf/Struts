@@ -17,13 +17,16 @@
 	<br>
 	<s:form action="selectResult">
 		<h2>
-			<s:select list="Engine" label="Digite sua Busca" HeaderKey="-1"
-				HeaderValue="Select search" name="youSearch" value="Engine" />
+				<s:select label="What's your favor search engine"
+		headerKey="-1" headerValue="Select Search Engines"
+		list="searchEngine"
+		name="yourSearchEngine"
+		value="defaultSearchEngine" />
 		</h2>
 		<h2>
 			<s:select list="#{'1':'jan', '2':'fev', '3':'mar'}"
 				label="Selecione o Mês" HeaderKey="-1" HeaderValue="Select search"
-				key="youMonth" name="youMonth" value="3" />
+				key="yourMonth" name="yourMonth" value="3" />
 		</h2>
 		
 		<s:submit key="submit" name="submit" />

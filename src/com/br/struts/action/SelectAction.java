@@ -7,69 +7,56 @@ import com.opensymphony.xwork2.ActionSupport;
 
 
 public class SelectAction extends ActionSupport{
-	
-	private List<String> Engine;
-	private String youSearch;
-	private String youMonth;
-	
-	
-	public List<String> getEngine() {
-		return Engine;
+
+	private List<String> searchEngine;
+
+	private String yourSearchEngine;
+	private String yourMonth;
+
+	public String getYourMonth() {
+		return yourMonth;
 	}
 
-
-	public void setEngine(List<String> engine) {
-		Engine = engine;
+	public void setYourMonth(String yourMonth) {
+		this.yourMonth = yourMonth;
 	}
 
-
-	public String getYouSearch() {
-		return youSearch;
+	public List<String> getSearchEngine() {
+		return searchEngine;
 	}
 
-
-	public void setYouSearch(String youSearch) {
-		this.youSearch = youSearch;
+	public void setSearchEngine(List<String> searchEngine) {
+		this.searchEngine = searchEngine;
 	}
 
-
-	public String getYouMonth() {
-		return youMonth;
+	public String getYourSearchEngine() {
+		return yourSearchEngine;
 	}
 
-
-	public void setYouMonth(String youMonth) {
-		this.youMonth = youMonth;
+	public void setYourSearchEngine(String yourSearchEngine) {
+		this.yourSearchEngine = yourSearchEngine;
 	}
 
-	public String getDefaultEngine() {
-		
-		return "www.google.com.br";
-		
+	public String getDefaultSearchEngine() {
+		return "yahoo.com";
 	}
-	
+
 	public SelectAction(){
-		
-		Engine = new ArrayList<String>();
-		Engine.add("www.google.com.br");
-		Engine.add("www.yahoo.com.br");
-		Engine.add("www.ask.com.br");
-		Engine.add("www.facebook.com.br");
-	}
-	
 
-	public String display(){
-		
+		searchEngine = new ArrayList<String>();
+		searchEngine.add("google.com");
+		searchEngine.add("bing.com");
+		searchEngine.add("yahoo.com");
+		searchEngine.add("baidu.com");
+		searchEngine.add("Cara legal");
+	}
+
+	public String execute() {
+		return SUCCESS;
+	}
+
+	public String display() {
 		return NONE;
-	}
-	
-	
-
-	@Override
-	public String execute() throws Exception {
-
-		
-		return "success";
 	}
 
 }
