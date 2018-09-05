@@ -74,6 +74,14 @@
 		<action name="inputRadioButton" class="com.br.struts.action.RadioButtonAction">
 			<result name="success">resultRadioButton.jsp</result>
 		</action>
+
+		<action name="doubleSelect" class="com.br.struts.action.DoubleSelectAction" method="display">
+			<result name="none">doubleSelect.jsp</result>
+		</action>
+		
+		<action name="inputDoubleSelect" class="com.br.struts.action.DoubleSelectAction">
+			<result name="success">doubleSelectResult.jsp</result>
+		</action>
 		
 		
 	</package>

@@ -27,8 +27,8 @@
 		<li><s:url var="LINK4" value="inputTextArea" /> <s:a
 				href="%{LINK4}">TextArea</s:a></li>
 		<li><s:url var="LINK5" value="checkBox" /> <s:a href="%{LINK5}">Check Box</s:a></li>
-		<li><s:url var="LINK6" value="radioButton" /> <s:a
-				href="%{LINK6}">Radio Button</s:a></li>
+		<li><s:url var="LINK6" value="radioButton" /> <s:a href="%{LINK6}">Radio Button</s:a></li>
+		<li><s:url var="LINK7" value="doubleSelect" /> <s:a href="%{LINK7}">Double Selection</s:a> </li>
 	</ol>
 
 </body>
