@@ -80,7 +80,7 @@
 		</action>
 		
 		<action name="inputDoubleSelect" class="com.br.struts.action.DoubleSelectAction">
-			<result name="success">doubleSelectResult.jsp</result>
+			<result name="success">resultDoubleSelect.jsp</result>
 		</action>
 		
 		

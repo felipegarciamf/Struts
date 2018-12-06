@@ -18,15 +18,13 @@ public class DoubleSelectAction extends ActionSupport {
 	
 	
 	public String execute() throws Exception {
-		 System.out.println("Entrou");
-		 
-		 setTeste("testado");
+		System.out.println("Executou DoubleSelectAction");
 		 
 		return "success";
 	}
 	
 	public String display() {
-		System.out.println("Executou Radio Button");
+		
 		return NONE;
 	}
 	
