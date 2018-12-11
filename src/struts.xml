@@ -9,7 +9,7 @@
 	as tags criadas																		-->
 	<constant name="struts.custom.i18n.resources" value="global" />
 	
-	
+	<constant name="struts.custom.i18n.resources" value="messages" />
 
 	<package name="com.br.struts.action" extends="struts-default">
 		<!-- encaminha para página index com o nome de home -->

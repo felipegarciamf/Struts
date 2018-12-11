@@ -12,6 +12,8 @@
 <jsp:include page="includes/Header.jsp" />
 <h1>Double Select</h1>
 
+<s:property value="username2"/>
+teste
 
 
 <jsp:include page="includes/Footer.jsp" />
