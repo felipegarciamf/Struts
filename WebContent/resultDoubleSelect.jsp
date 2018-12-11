@@ -4,11 +4,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>template</title>
+<title>Resultado do Double Select</title>
 </head>
 <body>
+<jsp:include page="includes/Header.jsp" />
 <h1>Resultado do Double Select</h1>
 
-
+<jsp:include page="includes/Footer.jsp" />
 </body>
 </html>

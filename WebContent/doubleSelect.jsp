@@ -6,12 +6,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>template</title>
+<title>Double Select</title>
 </head>
 <body>
 <h1>Double Select</h1>
 
-<s:property value="teste"/>
+
 
 
 </body>
