@@ -3,6 +3,8 @@ package com.br.projeto.model;
 public class Language {
 	
 	private String  LanguageCode;
+	
+	
 	public String getLanguageCode() {
 		return LanguageCode;
 	}

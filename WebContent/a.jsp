@@ -18,7 +18,7 @@
 	<s:a href="%{LINK1}">Este é o link 1</s:a>
 </li>
 <li>
-	<s:url var="LINK2" value="http://localhost:8080/project_struts/link2"/>
+	<s:url var="LINK2" value="selectAction"/>
 	<s:a href="%{LINK2}">Este é o link 2</s:a>
 </li>
 <li>

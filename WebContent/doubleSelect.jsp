@@ -9,10 +9,11 @@
 <title>Double Select</title>
 </head>
 <body>
+<jsp:include page="includes/Header.jsp" />
 <h1>Double Select</h1>
 
 
 
-
+<jsp:include page="includes/Footer.jsp" />
 </body>
 </html>

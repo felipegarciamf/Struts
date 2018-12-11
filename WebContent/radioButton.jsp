@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
+<jsp:include page="includes/Header.jsp" />
 <h1>Radio Button</h1>
 <br>
 <hr>

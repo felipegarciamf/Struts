@@ -5,18 +5,20 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Result</title>
 <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-	<h1>Welcome</h1>
+	<h1>Result</h1>
 	<hr>
 	<br/>
 	<div align="center">
 		<s:property value="address" />
 		<br/>
+		<s:property value="username" />
+		<br/>
 		
-		
+
 
 	</div>
 

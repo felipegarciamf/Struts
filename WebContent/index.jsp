@@ -10,10 +10,11 @@
 <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-	<%
-		out.print("FINALMENTE CARALHO");
-	%>
+<jsp:include page="includes/Header.jsp" />
 	<h1>Exercicios</h1>
+	
+	<table>
+	<tr>
 	<ol>
 		<li><s:url var="minhaurl" value="b" /> <s:a href="%{minhaurl}">PAGINA A</s:a>
 		</li>
@@ -30,6 +31,8 @@
 		<li><s:url var="LINK6" value="radioButton" /> <s:a href="%{LINK6}">Radio Button</s:a></li>
 		<li><s:url var="LINK7" value="doubleSelect" /> <s:a href="%{LINK7}">Double Selection</s:a> </li>
 	</ol>
-
+	</tr>
+	</table>
+<jsp:include page="includes/Footer.jsp" />
 </body>
 </html>
