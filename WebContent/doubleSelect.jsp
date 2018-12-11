@@ -12,9 +12,16 @@
 <jsp:include page="includes/Header.jsp" />
 <h1>Double Select</h1>
 
-<s:property value="username2"/>
-teste
 
+<s:form action="inputDoubleSelect" namespace="/">
+
+	<s:doubleselect label="Fruits" name="Fruit1"  list="{'apple','orange'}" doubleName="Fruit2" doubleList="top == 'Fruits'?({'apple','orange','banana'}):({'pig','chiken'})" />
+	<s:set name="serverList" value="#{'AppServer':{'apache', 'tomcat', 'jboss'},'Database':{'oracle', 'mysql'}}" />
+	
+	<s:doubleselect label="Language" name="language1"  list="LanguageMap.keySet()" doubleName="language2" doubleList="languageMap.get(top)" />
+	
+	<s:submit key="submit" name="submit" />
+</s:form>
 
 <jsp:include page="includes/Footer.jsp" />
 </body>

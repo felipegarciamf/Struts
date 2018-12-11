@@ -22,21 +22,21 @@ public class DoubleSelectAction extends ActionSupport {
 	
 	private String Language2;
 	
+	@SuppressWarnings("rawtypes")
 	Map languageMap;
 	
 	
 	public String execute() throws Exception {
 		System.out.println("Executou DoubleSelectAction");
-		 
 		return "success";
 	}
 	
 	public String display() {
-		
 		return NONE;
 	}
 	
 	
+	@SuppressWarnings("unchecked")
 	public DoubleSelectAction() {
 	
 		languageMap = new HashMap<>();
